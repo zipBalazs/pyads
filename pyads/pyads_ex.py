@@ -834,7 +834,8 @@ def adsSyncReadReqEx2(
     index_offset_c = ctypes.c_ulong(index_offset)
 
     if type_is_string(data_type):
-        data = (STRING_BUFFER * PLCTYPE_STRING)()
+        #data = (STRING_BUFFER * PLCTYPE_STRING)()
+        data = data_type()
     elif type_is_wstring(data_type):
         data = (STRING_BUFFER * ctypes.c_uint8)()
     else:
