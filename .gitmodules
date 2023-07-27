@@ -1,4 +1,4 @@
 [submodule "adslib"]
 	path = adslib
 	#url = https://github.com/stlehmann/ADS.git
-    url = https://github.com/Beckhoff/ADS
+	url = https://github.com/Beckhoff/ADS
